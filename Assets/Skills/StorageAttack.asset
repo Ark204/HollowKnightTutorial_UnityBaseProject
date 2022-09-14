@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4550121073608010893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253df618579eead45aa09ee5ec1320b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockDirect: 1
+  damage: 1.2441654
+  maxTarget: 8
+  attackRange:
+    center: {x: 1.65, y: 1.26, z: 0}
+    radius: 2.08
+--- !u!114 &-2445010905804775353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0267a21686831ad42a4133e63e7fb557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 1.17, y: 1.21, z: 0}
+  scale: 0.5
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd670ed6420ab3d4993234d90d86f3a6, type: 3}
+  m_Name: StorageAttack
+  m_EditorClassIdentifier: 
+  m_skillID: 3
+  m_loop: 1
+  m_endTime: 1
+  startDeles: []
+  timePoints: []
+  stopDeles:
+  - {fileID: -4550121073608010893}
+  - {fileID: -2445010905804775353}
+  - {fileID: 5245790849351233631}
+  exitDeles: []
+  bSkills: []
+--- !u!114 &5245790849351233631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8064d0d223c95141a031a6fd9bb6ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animstr: Attack

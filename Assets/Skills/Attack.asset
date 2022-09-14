@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1195046901738024102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8064d0d223c95141a031a6fd9bb6ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animstr: Attack
+--- !u!114 &-256533781936986095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0267a21686831ad42a4133e63e7fb557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 1.48, y: 0.5, z: 0}
+  scale: 0.2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd670ed6420ab3d4993234d90d86f3a6, type: 3}
+  m_Name: Attack
+  m_EditorClassIdentifier: 
+  m_skillID: 0
+  m_loop: 0
+  m_endTime: 0.3
+  startDeles:
+  - {fileID: -256533781936986095}
+  - {fileID: -1195046901738024102}
+  timePoints:
+  - effectTime: 0.377
+    bDele: {fileID: 1617135697352274156}
+  stopDeles: []
+  exitDeles: []
+  bSkills: []
+--- !u!114 &1617135697352274156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2bba114b5d19449b7c32a914a327ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockDirect: 0
+  damage: 1
+  maxTarget: 8
+  attackRange:
+    center: {x: 1.96, y: 0.43, z: 0}
+    radius: 1.28
